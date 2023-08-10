@@ -1,8 +1,22 @@
-# React + Vite
+# 001_Web_EjerciciosReact
+Proyecto de Ejercicios Front-End con React
+## Descripción
+En este proyecto, realizaremos ejercicios pequeños que servirán para armar un proyecto más grande.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Objetivos
+- Mejorar la velocidad de desarrollo
+- Mejorar lógica de programación en React
+- Desarrollar el método inductivo en la realización de proyectos
+- Planificar Ejercicios antes de desarrollar
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
+- React
+- TailwindCss
+- Vite
+- PostCss
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Despliegue
+- En Netlify
+
+
+![Tecnologías](https://i.ytimg.com/vi/carsqIG6B78/hqdefault.jpg)
