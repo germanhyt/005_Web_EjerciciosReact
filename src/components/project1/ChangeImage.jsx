@@ -43,7 +43,9 @@ function ChangeImage() {
             </div>
             <div className='text-center'>
                 <a href="/">
-                    <button className='bg-black text-[#11DDAA] w-36 rounded-md'>
+                    <button
+                        className='bg-black text-[#11DDAA] w-36 rounded-md'
+                    >
                         Recargar
                     </button>
                 </a>
