@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import Dinner from './Dinner';
 
+/**
+ * 
+ * @returns App para calcular el costo total de las figuras que se están comprando
+ */
+
 function CostDinner() {
 
     //Array de Objetos
@@ -44,9 +49,11 @@ function CostDinner() {
     return (
         <>
             <div className='my-20 flex flex-col items-center justify-center gap-2'>
-                <h1 className='bg-black text-center text-white py-1 px-20 rounded-md'>
+                <h2 className='font-bold font-serif text-center'>Compramos figuras de reyes</h2>
+
+                <h3 className='bg-black text-center text-white py-1 px-20 rounded-md'>
                     Total a pagar: s/.{total}
-                </h1>
+                </h3>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4 p-5'>
 
                     <Dinner

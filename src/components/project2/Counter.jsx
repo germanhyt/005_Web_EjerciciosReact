@@ -36,8 +36,8 @@ function Counter() {
 
     return (
         <>
-            <div className='my-20 flex flex-col items-center justify-center gap-2'>
-                <h2 className='font-bold font-serif'>Contador de elementos</h2>
+            <div className='my-14 flex flex-col items-center justify-center gap-2'>
+                <h2 className='font-bold font-serif'>Contamos el número de elementos</h2>
                 <h3 className='w-32 text-center rounded-md font-bold border-2'>
                     {count}
                 </h3>

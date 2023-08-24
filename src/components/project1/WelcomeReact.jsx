@@ -14,10 +14,10 @@ function WelcomeReact() {
 
   return (
     <>
-      <div className='flex flex-col items-center justify-center gap-5'>
+      <div className='my-14 flex flex-col items-center justify-center gap-5'>
         {flag == true ? alert("Hello world") : ""}
         <h1 className='text-center font-serif font-bold'>
-          Bienvenido al Curso de React
+          Mostramos Información
         </h1>
         <ul className='list-disc'>
           <li>

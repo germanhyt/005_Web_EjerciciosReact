@@ -26,31 +26,35 @@ function ChangeImage() {
     }
 
     return (
-        <div className='my-12'>
-            <div className='grid grid-cols-1 md:grid-cols-3 p-4'>
-                <div className='flex flex-col items-center w-[100%] p-2'>
-                    <img onClick={changeImages} src={rey_atanagildo} alt="" />
-                    <p className='font-bold text-sm'>Atanagildo</p>
+        <>
+            <div className='my-14'>
+                <h2 className='font-bold font-serif text-center'>Cambiamos de Imagen</h2>
+
+                <div className='grid grid-cols-1 md:grid-cols-3 p-4'>
+                    <div className='flex flex-col items-center w-[100%] p-2'>
+                        <img onClick={changeImages} src={rey_atanagildo} alt="" />
+                        <p className='font-bold text-sm'>Atanagildo</p>
+                    </div>
+                    <div className='flex flex-col items-center w-[100%] p-2'>
+                        <img onClick={changeImages} src={rey_leogivildo} alt="" />
+                        <p className='font-bold text-sm'>Leogivildo</p>
+                    </div>
+                    <div className='flex flex-col items-center w-[100%] p-2'>
+                        <img onClick={changeImages} src={rey_ervigio} alt="" />
+                        <p className='font-bold text-sm'>Ervigio</p>
+                    </div>
                 </div>
-                <div className='flex flex-col items-center w-[100%] p-2'>
-                    <img onClick={changeImages} src={rey_leogivildo} alt="" />
-                    <p className='font-bold text-sm'>Leogivildo</p>
-                </div>
-                <div className='flex flex-col items-center w-[100%] p-2'>
-                    <img onClick={changeImages} src={rey_ervigio} alt="" />
-                    <p className='font-bold text-sm'>Ervigio</p>
+                <div className='text-center'>
+                    <a href="/">
+                        <button
+                            className='bg-black text-[#11DDAA] w-36 rounded-md'
+                        >
+                            Recargar
+                        </button>
+                    </a>
                 </div>
             </div>
-            <div className='text-center'>
-                <a href="/">
-                    <button
-                        className='bg-black text-[#11DDAA] w-36 rounded-md'
-                    >
-                        Recargar
-                    </button>
-                </a>
-            </div>
-        </div>
+        </>
     )
 }
 

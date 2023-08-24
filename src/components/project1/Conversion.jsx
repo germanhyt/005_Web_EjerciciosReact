@@ -42,7 +42,9 @@ function Conversion() {
 
     return (
         <>
-            <div className='flex flex-col items-center justify-center gap-2'>
+            <div className='my-14 flex flex-col items-center justify-center gap-2'>
+                <h2 className='font-bold font-serif text-center'>Multiplicamos por {change} el número ingresado</h2>
+
                 <label htmlFor="number">
                     Número:
                     <input

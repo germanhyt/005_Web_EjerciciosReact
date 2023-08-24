@@ -72,6 +72,8 @@ function Methods() {
 
     return (
         <>
+            <h2 className='font-bold font-serif text-center'>Métodos más usados</h2>
+
             <div className='my-10 flex flex-col items-center justify-center gap-2'>
                 <h2 className='font-bold font-serif'>Método Find</h2>
                 <p className='bg-yellow-100 py-1 px-2 rounded-md'>

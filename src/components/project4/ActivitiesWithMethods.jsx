@@ -60,7 +60,7 @@ function ActivitiesWithMethods() {
 
     return (
         <>
-            <div className='my-10 px-10 grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-center'>
+            <div className='my-14 px-10 grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-center'>
                 <h2 className='md:col-span-2 text-center font-bold font-serif'>Activity 1: Use Map</h2>
                 {
                     kings.map((e) =>
@@ -87,7 +87,7 @@ function ActivitiesWithMethods() {
 
                 }
             </div>
-            <div className='my-10 px-10 grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-center'>
+            <div className='my-14 px-10 grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-center'>
                 <h2 className='md:col-span-2 text-center font-bold font-serif'>Activity 2: Use Filter, Includes and Map</h2>
                 {
                     kings
@@ -111,7 +111,7 @@ function ActivitiesWithMethods() {
 
                 }
             </div>
-            <div className='my-10 px-10 flex flex-col  gap-2 items-center justify-center'>
+            <div className='my-14 px-10 flex flex-col  gap-2 items-center justify-center'>
                 <h2 className='text-center font-bold font-serif'>Activity 3: Use Find</h2>
                 <p className='bg-yellow-100 py-1 px-2 rounded-md'>
                     {
@@ -121,7 +121,7 @@ function ActivitiesWithMethods() {
                     }
                 </p>
             </div>
-            <div className='my-10 px-10 grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-center'>
+            <div className='my-14 px-10 grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-center'>
                 <h2 className='md:col-span-2 text-center font-bold font-serif'>Activity 4: Use Filter y map</h2>
                 {
                     kings

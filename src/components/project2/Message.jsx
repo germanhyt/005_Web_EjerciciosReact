@@ -55,13 +55,15 @@ function Message() {
     return (
         <>
             <div
-                className='my-20 flex flex-col items-center justify-center gap-2'
+                className='my-14 flex flex-col items-center justify-center gap-2'
             >
+                <h2 className='font-bold font-serif'>Mostramos mensajes</h2>
+
                 <div
                     className='text-center'
                     onClick={showMessage}
                 >
-                    Mensaje: {message}
+                    {message}
                 </div>
                 <input
                     onClick={handleChange}

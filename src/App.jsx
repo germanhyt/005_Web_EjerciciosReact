@@ -8,6 +8,8 @@ import Message from './components/project2/Message';
 import CostDinner from './components/project3/CostDinner';
 import Methods from './components/project4/Methods';
 import ActivitiesWithMethods from './components/project4/ActivitiesWithMethods';
+import EmployeesOfTheMonth from './components/project5/EmployeesOfTheMonth';
+import PeopleWinners from './components/project5/PeopleWinners';
 
 function App() {
   return (
@@ -29,8 +31,9 @@ function App() {
         <Methods />
         <ActivitiesWithMethods />
       </section>
-      <section className=''>
-
+      <section className='bg-[#DDFFAA] py-12'>
+        <EmployeesOfTheMonth />
+        <PeopleWinners/>
       </section>
       <section className=''>
 
