@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import Dinner from './Dinner';
 
 /**
- * 
- * @returns App para calcular el costo total de las figuras que se están comprando
+ * App que muestra la información de los reyes mediante en base a un array de objetos,
+ * con un click se pueda realizar la operación de compra,
+ * esta operación ocasiona que se oculte la figura elegida y sumarice el precio a un total
+ * @returns 
  */
 
 function CostDinner() {

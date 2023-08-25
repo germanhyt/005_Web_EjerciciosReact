@@ -10,6 +10,8 @@ import Methods from './components/project4/Methods';
 import ActivitiesWithMethods from './components/project4/ActivitiesWithMethods';
 import EmployeesOfTheMonth from './components/project5/EmployeesOfTheMonth';
 import PeopleWinners from './components/project5/PeopleWinners';
+import ChangeColor from './components/project6/ChangeColor';
+import Number from './components/project6/Number';
 
 function App() {
   return (
@@ -35,8 +37,9 @@ function App() {
         <EmployeesOfTheMonth />
         <PeopleWinners/>
       </section>
-      <section className=''>
-
+      <section className='bg-[#11DDAA] py-12'>
+        <ChangeColor/>
+        <Number/>
       </section>
       <section className=''>
 

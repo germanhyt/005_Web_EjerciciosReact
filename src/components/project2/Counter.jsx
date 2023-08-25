@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 /**
- * Nos permite declara y manejar estados locales dentro un componente funcional sin necesidad de crear una clase;
+ * El UseState nos permite declarar y manejar estados locales dentro un componente funcional sin necesidad de crear una clase;
  * El valor que devuelve el Hook UseState() es un array que contiene la variable y la función que cambia su valor;
  * Puede mantener datos en el estado del componente que pueden cambiar durante la vida del componente;
  * Gestiona de forma eficiente el estado y solo actualiza los componentes cuando sea necesario;

@@ -1,5 +1,12 @@
 import React, { useState } from 'react'
 
+/**
+ * Mediante esta app vamos a poder hacer una conversión
+ * desde la moneda internacional dólar a la moneda
+ * local y otras más
+ * @returns 
+ */
+
 function ChangeMoney() {
 
     //Definimos los hooks
