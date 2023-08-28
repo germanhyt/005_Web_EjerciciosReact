@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 /**
  * En este proyecto se muestra una lista de personas seleccionadas para ser premiados.
- * En este caso aparte de los jooks useState y useEffect, usamos el SpreadOperator que:
+ * En este caso aparte de los hooks useState y useEffect, usamos el SpreadOperator que:
  * - Nos permite descomponer arrays y objetos en elementos individuales 
  * - Se utiliza para copiar, combinar o pasar elementos de manera eficiente
  * - Copiar Arrays y Objetos: es decir se crea copias de arrays u objetos, evitando modificar los originales accidentalmente

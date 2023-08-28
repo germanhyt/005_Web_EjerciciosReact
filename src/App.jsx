@@ -12,6 +12,22 @@ import EmployeesOfTheMonth from './components/project5/EmployeesOfTheMonth';
 import PeopleWinners from './components/project5/PeopleWinners';
 import ChangeColor from './components/project6/ChangeColor';
 import Number from './components/project6/Number';
+import { Datos } from './context/Context';
+import Page1 from './components/project7/Page1';
+import Page2 from './components/project7/Page2';
+import Page3 from './components/project7/Page3';
+import Colors from './components/project7/Colors';
+import MyProvider from './context/MyProvider';
+import Lenguages from './components/project7/Lenguages';
+import PageLenguage from './components/project7/PageLenguage';
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import PageA from './components/project8/PageA';
+import PageB from './components/project8/PageB';
+import PageC from './components/project8/PageC';
+import Home from './components/project8/kings/Home';
+import Error404 from './components/project8/Error404';
+import Model from './components/project8/kings/Model';
+
 
 function App() {
   return (
@@ -35,17 +51,45 @@ function App() {
       </section>
       <section className='bg-[#DDFFAA] py-12'>
         <EmployeesOfTheMonth />
-        <PeopleWinners/>
+        <PeopleWinners />
       </section>
       <section className='bg-[#11DDAA] py-12'>
-        <ChangeColor/>
-        <Number/>
+        <ChangeColor />
+        <Number />
       </section>
-      <section className=''>
-
+      <section className='bg-[#BB1133] py-12'>
+        <div className='grid grid-cols-1 place-content-center gap-10'>
+          <div className='flex flex-col items-center justify-center gap-2'>
+            <h2 className='font-bold font-serif text-center'>Uso del Context</h2>
+            <Datos>
+              <div className='flex items-center justify-center gap-4'>
+                <Page1 />
+                <Page2 />
+                <Page3 />
+              </div>
+              <Colors />
+            </Datos>
+          </div>
+          <div className='flex flex-col items-center justify-center gap-2'>
+            <MyProvider>
+              <Lenguages />
+              <PageLenguage />
+            </MyProvider>
+          </div>
+        </div>
       </section>
-      <section className=''>
-
+      <section className='bg-[#55AAFF] py-12'>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<PageA />} />
+            <Route path='/page-a' element={<Navigate to={"/"} />} />
+            <Route path='/page-b' element={<PageB />} />
+            <Route path='/page-c' element={<PageC />} />
+            <Route path='/kings' element={<Home />} />
+            <Route path='/kings/:king' element={<Model />} />
+            <Route path='*' element={<Error404 />} />
+          </Routes>
+        </BrowserRouter>
       </section>
       <section className=''>
 

@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
+/**
+ * EL proyecto consiste en cambiar de color un cuadro mediante un evento, ello en base a la distancia de un punto a otro.
+ * Usamos los hooks de useState y useEffect.
+ * @returns 
+ * 
+ */
+
+
 function ChangeColor() {
     const [show, setShow] = useState(true);
 
@@ -12,9 +20,9 @@ function ChangeColor() {
 
             function onMouseMove(e) {
                 if (e.clientX < window.innerWidth / 2) {
-                    setColor("#FFAA00");
+                    setColor("#000000");
                 } else {
-                    setColor("#0000FF");
+                    setColor("#FFDDFF");
                 }
             }
 
@@ -42,6 +50,8 @@ function ChangeColor() {
     return (
         <>
             <div className="my-14 grid grid-cols-1 place-items-center gap-4">
+                <h2 className='font-bold font-serif text-center'>Cuadro de cambio de Color</h2>
+
                 <div className="flex gap-2">
                     <button
                         className="p-2 bg-black text-white rounded-md"
