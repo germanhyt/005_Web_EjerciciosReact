@@ -16,7 +16,7 @@ function PageB() {
                         <Link to='/page-c'>Página C</Link>
                     </li>
                     <li className='hover:underline '>
-                        <Link to='/reyes'>Reyes</Link>
+                        <Link to='/kings'>Reyes</Link>
                     </li>
                 </ul>
             </div>

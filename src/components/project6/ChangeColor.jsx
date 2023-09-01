@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 
 /**
  * EL proyecto consiste en cambiar de color un cuadro mediante un evento, ello en base a la distancia de un punto a otro.
@@ -10,12 +10,13 @@ import React, { useEffect, useState } from 'react'
 
 function ChangeColor() {
     const [show, setShow] = useState(true);
+    const refBox = useRef();
 
     function MouseColor() {
         const [color, setColor] = useState("FFAA00");
 
         useEffect(() => {
-            window.addEventListener("mousemove", onMouseMove);
+            refBox.current.addEventListener("mousemove", onMouseMove);
             console.log("Ejecutando...");
 
             function onMouseMove(e) {
@@ -27,7 +28,7 @@ function ChangeColor() {
             }
 
             return () => {
-                window.removeEventListener("mousemove", onMouseMove);
+                refBox.current.removeEventListener("mousemove", onMouseMove);
                 console.log("Limpiando...");
             }
 
@@ -35,6 +36,7 @@ function ChangeColor() {
 
         return (
             <div
+                ref={refBox}
                 style={{
                     width: "90%",
                     height: "400px",
