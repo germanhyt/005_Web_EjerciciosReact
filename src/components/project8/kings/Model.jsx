@@ -17,9 +17,12 @@ export default function Model() {
                 <h3 className='text-center font-bold'>
                     {kingComplete}
                 </h3>
-                <div className='bg-white w-44 hover:scale-[0.9] m-auto rounded-lg text-center'>
-                    <Link className='text-sm' to='/'>Volver al menu principal</Link>
-                </div>
+                <Link to='../kings'>
+                    <div className='bg-white w-44 hover:scale-[0.9] text-sm py-2 m-auto rounded-lg text-center'>
+                        Volver atrás
+                    </div>
+                </Link>
+
             </div>
         </>
     )
