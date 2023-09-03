@@ -27,7 +27,8 @@ import PageC from './components/project8/PageC';
 import Home from './components/project8/kings/Home';
 import Error404 from './components/project8/Error404';
 import Model from './components/project8/kings/Model';
-
+import Products from './components/project9/Products';
+import Calendar from './components/project9/Calendar';
 
 function App() {
   return (
@@ -91,8 +92,9 @@ function App() {
           </Routes>
         </BrowserRouter>
       </section>
-      <section className=''>
-
+      <section className='bg-[#AAFF55] py-12'>
+        <Products />
+        <Calendar />
       </section>
       <section className=''>
 
