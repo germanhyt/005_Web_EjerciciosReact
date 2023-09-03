@@ -3,7 +3,9 @@ import MyContext from '../../context/MyContext'
 
 //Funciones
 function getImgUrl(fileName) {
-    const imgUrl = new URL("../../assets/img/" + fileName, import.meta.url).href;
+    // const imgUrl = new URL("../../assets/img/" + fileName, import.meta.url).href;
+    const imgUrl = new URL("../../../public/img/" + fileName, import.meta.url).href;
+
     // console.log(imgUrl);
     return imgUrl;
 }
