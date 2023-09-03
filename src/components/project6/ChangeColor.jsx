@@ -28,7 +28,7 @@ function ChangeColor() {
             }
 
             return () => {
-                refBox.current.removeEventListener("mousemove", onMouseMove);
+                window.removeEventListener("mousemove", onMouseMove);
                 console.log("Limpiando...");
             }
 
