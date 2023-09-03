@@ -29,6 +29,7 @@ import Error404 from './components/project8/Error404';
 import Model from './components/project8/kings/Model';
 import Products from './components/project9/Products';
 import Calendar from './components/project9/Calendar';
+import MainSearchMovies from './components/project10/MainSearchMovies';
 
 function App() {
   return (
@@ -96,8 +97,8 @@ function App() {
         <Products />
         <Calendar />
       </section>
-      <section className=''>
-
+      <section className='bg-[#CCEEFF] py-12'>
+        <MainSearchMovies/>
       </section>
       <section className=''>
 
