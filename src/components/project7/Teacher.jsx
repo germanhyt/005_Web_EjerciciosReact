@@ -17,7 +17,6 @@ function getImgUrl(fileName) {
         // console.log(nombre[nombre.length - 1])
         if (ultimaParte === fileName) {
             let nombre = ultimaParte.split('.')[0];
-
             if (nombre == 'aimee') {
                 imgUrl = imgAimee;
             } else if (nombre === 'grace') {
@@ -27,7 +26,7 @@ function getImgUrl(fileName) {
             }
         }
     });
-    // console.log(imgUrl)
+    console.log(imgUrl)
     return imgUrl;
 }
 
