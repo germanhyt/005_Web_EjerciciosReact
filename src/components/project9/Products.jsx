@@ -42,7 +42,7 @@ const reducer = (state, action) => {
     switch (action.type) {
         case types.menos:
             return state.map((p) =>
-                action.payload === p.id && p.quantisty > 1
+                action.payload === p.id && p.quantity > 1
                     ? { ...p, quantity: p.quantity - 1 }
                     : p
             );
