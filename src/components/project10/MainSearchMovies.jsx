@@ -22,8 +22,9 @@ import debounce from "just-debounce-it";
 function useSearch() {
     const [search, updateSearch] = useState("");
     const [error, setError] = useState(null);
-    const isFirstInput = useRef(true);
+    const isFirstInput = useRef(true); //useRef(true): Crea una referencia mutable que se utiliza para rastrear si la entrada es la primera entrada del usuario. Esto es útil para evitar validar la primera entrada vacía.
 
+    // useEffect(() => {...}, [search]): Un efecto que se ejecuta cada vez que el valor de search cambia. Realiza una serie de validaciones en la cadena de búsqueda:
     useEffect(() => {
         if (isFirstInput.current) {
             isFirstInput.current = search === "";
@@ -57,6 +58,10 @@ function MainSearchMovies() {
     const { search, updateSearch, error } = useSearch();
     const { movies, loading, getMovies } = useMovies({ search, sort });
 
+    // debouncedGetMovies: Es una función creada utilizando el hook useCallback. Esta función actúa como un "debounced" (con retardo) wrapper para la función getMovies({ search }). La función debounce se encarga de retrasar la ejecución de getMovies({ search }) hasta que haya pasado un cierto intervalo de tiempo sin que se llame a debouncedGetMovies nuevamente.
+    // debounce: Es una función de utilidad que toma otra función como argumento y devuelve una nueva función que se retrasa en su ejecución. En este caso, la función proporcionada toma el parámetro search y llama a getMovies({ search }).
+    // 300: Es el tiempo en milisegundos que se espera antes de ejecutar la función getMovies({ search }). Esto significa que una vez que se llama a debouncedGetMovies, la ejecución de getMovies se retrasará durante 300 milisegundos.
+    // [getMovies]: Es una matriz de dependencias que se pasa a useCallback. Indica que debouncedGetMovies se re-creará si la función getMovies cambia. Esto asegura que debouncedGetMovies siempre haga referencia a la última versión de getMovies.
     const debouncedGetMovies = useCallback(
         debounce((search) => {
             // console.log("search", search);
