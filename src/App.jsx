@@ -30,6 +30,7 @@ import Model from './components/project8/kings/Model';
 import Products from './components/project9/Products';
 import Calendar from './components/project9/Calendar';
 import MainSearchMovies from './components/project10/MainSearchMovies';
+import MainCart from './components/project11/MainCart';
 
 function App() {
   return (
@@ -98,10 +99,10 @@ function App() {
         <Calendar />
       </section>
       <section className='bg-[#CCEEFF] py-12'>
-        <MainSearchMovies/>
+        <MainSearchMovies />
       </section>
       <section className=''>
-
+        <MainCart />
       </section>
       <section className=''>
 
