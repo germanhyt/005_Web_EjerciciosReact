@@ -16,11 +16,10 @@ class Layout extends Component {
   render() {
     return (
       <div
+        className='flex flex-col'
       // style={styles.layout}
       >
-        <div style={styles.container}>
-          {this.props.children}
-        </div>
+        {this.props.children}
       </div>
     )
   }

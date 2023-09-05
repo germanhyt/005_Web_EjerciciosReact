@@ -31,10 +31,10 @@ function Lenguages() {
 
     return (
         <>
-            <div className="grid grid-cols-1 gap-2">
+            <div className="grid grid-cols-1 place-content-center gap-2">
                 <h2 className='font-bold font-serif text-center'>Curso de React según idioma</h2>
 
-                <div className="flex items-center gap-2">
+                <div className="flex flex-col sm:flex-row items-center gap-2">
                     <div className="w-fit m-auto">
                         <div onClick={change1}>
                             <img src={imgSpain} alt="" />

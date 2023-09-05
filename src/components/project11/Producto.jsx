@@ -16,11 +16,11 @@ const styles = {
 
 class Producto extends Component {
   render() {
-    const { producto, agregarAlCarro } = this.props
+    const { producto, agregarAlCarro } = this.props;
 
     return (
       <div
-        className='flex items-center justify-center flex-col px-2 py-4 border-2'
+        className='flex flex-col items-center justify-center px-2 py-4 border-2 w-[90%] mx-auto'
       // style={styles.producto}
       >
         <img

@@ -11,7 +11,7 @@ class Logo extends Component {
   render() {
     return (
       <div
-        className=' text-black border-2 px-2 py-1 rounded-lg font-bold text-[2rem]'
+        className=' text-black border-2 px-2 py-1 rounded-lg font-bold text-[1rem] sm:text-[2rem]'
       // style={styles.logo}
       >
         Tienda Virtual (Shop)

@@ -25,8 +25,8 @@ function PageLenguage() {
     return (
         <>
             <div className="flex flex-col gap-4 justify-center items-center">
-                <div>{estudent[idioma].titulo}</div>
-                <h2>{estudent[idioma].texto}</h2>
+                <div className=" text-center">{estudent[idioma].titulo}</div>
+                <h2 className=" text-center">{estudent[idioma].texto}</h2>
                 <div className="flex gap-2">
                     <button
                         className="w-40 h-10 rounded-md bg-black text-white"

@@ -56,7 +56,7 @@ function Conversion() {
                 <div
                     ref={refBox}
                     onClick={increment}
-                    className='text-center w-[40%] bg-green-300'
+                    className='text-center w-[24%] px-2 py-1 bg-green-300 rounded-md'
                 >
                     1
                 </div>

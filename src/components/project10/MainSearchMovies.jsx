@@ -88,9 +88,9 @@ function MainSearchMovies() {
     return (
         <>
             <div className="my-12 flex flex-col items-center justify-center gap-6 mx-12">
-                <header className="flex flex-col gap-4">
+                <header className="flex flex-col gap-4 items-center">
                     <h1 className="font-bold text-xl text-center">Buscador de películas</h1>
-                    <form className="flex gap-4" onSubmit={handleSubmit}>
+                    <form className="flex flex-col sm:flex-row gap-4 items-center justify-center" onSubmit={handleSubmit}>
                         <input
                             className="p-2"
                             style={{
@@ -115,10 +115,23 @@ function MainSearchMovies() {
                             Buscar
                         </button>
                     </form>
-                    {error && <p style={{ color: "red" }}>{error}</p>}
+                    {error &&
+                        <p
+                            className="text-center text-red-600"
+                        // style={{ color: "red" }}
+                        >
+                            {error}
+                        </p>
+                    }
                 </header>
 
-                <main>{loading ? <p>Cargando...</p> : <Movies movies={movies} />}</main>
+                <main
+                    className="text-center"
+                >
+                    {loading
+                        ? <p>Cargando...</p>
+                        : <Movies movies={movies} />}
+                </main>
             </div>
         </>
     );

@@ -19,7 +19,7 @@ class Navbar extends Component {
     const { carro, esCarroVisible, mostrarCarro } = this.props;
     return (
       <nav
-        className='relative flex gap-4 px-4 py-2 rounded-md'
+        className='relative flex flex-col sm:flex-row items-center justify-center gap-4 px-4 py-2 rounded-md'
       // style={styles.navbar}
       >
         <Logo />

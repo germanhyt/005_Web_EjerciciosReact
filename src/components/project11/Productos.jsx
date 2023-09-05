@@ -15,7 +15,7 @@ class Productos extends Component {
 
     return (
       <div
-        className='grid grid-cols-2 gap-2 sm:grid-cols-3 place-content-center '
+        className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 place-content-center'
       // style={styles.productos}
       >
         {productos.map(producto =>

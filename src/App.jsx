@@ -12,14 +12,8 @@ import EmployeesOfTheMonth from './components/project5/EmployeesOfTheMonth';
 import PeopleWinners from './components/project5/PeopleWinners';
 import ChangeColor from './components/project6/ChangeColor';
 import Number from './components/project6/Number';
-import { Datos } from './context/Context';
-import Page1 from './components/project7/Page1';
-import Page2 from './components/project7/Page2';
-import Page3 from './components/project7/Page3';
-import Colors from './components/project7/Colors';
-import MyProvider from './context/MyProvider';
-import Lenguages from './components/project7/Lenguages';
-import PageLenguage from './components/project7/PageLenguage';
+import MainLenguages from './components/project7/MainLenguages';
+
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import PageA from './components/project8/PageA';
 import PageB from './components/project8/PageB';
@@ -61,25 +55,7 @@ function App() {
         <Number />
       </section>
       <section className='bg-[#BB1133] py-12'>
-        <div className='grid grid-cols-1 place-content-center gap-10'>
-          <div className='flex flex-col items-center justify-center gap-2'>
-            <h2 className='font-bold font-serif text-center'>Uso del Context</h2>
-            <Datos>
-              <div className='flex items-center justify-center gap-4'>
-                <Page1 />
-                <Page2 />
-                <Page3 />
-              </div>
-              <Colors />
-            </Datos>
-          </div>
-          <div className='flex flex-col items-center justify-center gap-2'>
-            <MyProvider>
-              <Lenguages />
-              <PageLenguage />
-            </MyProvider>
-          </div>
-        </div>
+        <MainLenguages />
       </section>
       <section className='bg-[#55AAFF] py-12'>
         <BrowserRouter>
@@ -104,15 +80,8 @@ function App() {
       <section className=''>
         <MainCart />
       </section>
-      <section className=''>
+      <section className=''></section>
 
-      </section>
-      <section className=''>
-
-      </section>
-      <section className=''>
-
-      </section>
     </>
   )
 }
